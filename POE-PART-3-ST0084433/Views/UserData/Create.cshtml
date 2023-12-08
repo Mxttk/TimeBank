@@ -1,0 +1,108 @@
+﻿@model TestMVC.Models.UserData
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 style="color:#073642">Create</h1>
+
+@* styling sheet reference for background image*@
+<link href="~/css/stylesheet3.css" rel="stylesheet" />
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+          @*  <div class="form-group">
+                <label asp-for="userName" class="control-label"></label>
+                <input asp-for="userName" class="form-control" />
+                <span asp-validation-for="userName" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <div class="form-floating mb-3">
+                @*<label asp-for="moduleCode" class="control-label"></label>*@
+                    <input asp-for="moduleCode" class="form-control" placeholder="Module code" style="color:#073642" />
+                    <label for="floatingInput" style="color:#073642">Module code</label>
+                <span asp-validation-for="moduleCode" class="text-danger"></span>
+                <p></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-floating mb-3">
+               @* <label asp-for="moduleName" class="control-label"></label>*@
+                    <input asp-for="moduleName" class="form-control" placeholder="Module name" style="color:#073642" />
+                    <label for="floatingInput" style="color:#073642">Module name</label>
+                <span asp-validation-for="moduleName" class="text-danger"></span>
+                <p></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-floating mb-3">
+              @*  <label asp-for="numberOfCredits" class="control-label"></label>*@
+                    <input asp-for="numberOfCredits" class="form-control" placeholder="Module credits" style="color:#073642" />
+                    <label for="floatingInput" style="color:#073642">Module credits</label>
+                <span asp-validation-for="numberOfCredits" class="text-danger"></span>
+                <p></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-floating mb-3">
+               @* <label asp-for="classHours" class="control-label"></label>*@
+                    <input asp-for="classHours" class="form-control" placeholder="Class hours" style="color:#073642" />
+                    <label for="floatingInput" style="color:#073642">Class hours</label>
+                <span asp-validation-for="classHours" class="text-danger"></span>
+                <p></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-floating mb-3">
+                @*<label asp-for="semesterName" class="control-label"></label>*@
+                    <input asp-for="semesterName" class="form-control" placeholder="Semester name" style="color:#073642" />
+                    <label for="floatingInput" style="color:#073642">Semester name</label>
+                <span asp-validation-for="semesterName" class="text-danger"></span>
+                <p></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-floating mb-3">
+                @*<label asp-for="semesterDuration" class="control-label"></label>*@
+                    <input asp-for="semesterDuration" class="form-control" placeholder="Semester duration" style="color:#073642" />
+                    <label for="floatingInput" style="color:#073642">Semester duration</label>
+                <span asp-validation-for="semesterDuration" class="text-danger"></span>
+                <p></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-floating mb-3">
+                @*<label asp-for="semesterDate" class="control-label"></label>*@
+                    <input asp-for="semesterDate" class="form-control" placeholder="Semester start date" style="color:#073642" />
+                    <label for="floatingInput" style="color:#073642">Semester start date</label>
+                <span asp-validation-for="semesterDate" class="text-danger"></span>
+                <p></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-floating mb-3">
+                    @*<label asp-for="semesterDate" class="control-label"></label>*@
+                    <input asp-for="dateToStudy" class="form-control" placeholder="Date to study for" style="color:#073642" />
+                    <label for="floatingInput" style="color:#073642">Date to study on</label>
+                    <span asp-validation-for="dateToStudy" class="text-danger"></span>
+                    <p></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-secondary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <p></p>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,88 @@
+﻿@model IEnumerable<TestMVC.Models.UserData>
+
+@{
+    <p></p>
+    ViewData["Title"] = "Index";
+    <p></p>
+}
+
+<h1 style="color:#073642">Listed modules</h1>
+
+@* styling sheet reference for background image*@
+<link href="~/css/stylesheet3.css" rel="stylesheet" />
+
+<p>
+    <a asp-action="Create" style="color:#073642">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            @* <th>
+            @Html.DisplayNameFor(model => model.userName)
+            </th>*@
+            <th style="color:#073642">
+                <p>Module Code</p>
+            </th>
+            <th style="color:#073642">
+                <p>Module Name</p>
+            </th>
+            <th style="color:#073642">
+                <p>Module Credits</p>
+            </th>
+            <th style="color:#073642">
+                <p>Class hours</p>
+            </th>
+            <th style="color:#073642">
+                <p>Semester Name</p>
+            </th>
+            <th style="color:#073642">
+                <p>Semester Duration</p>
+            </th>
+            <th style="color:#073642">
+                <p>Semester start date</p>
+            </th>
+            <th style="color:#073642">
+                <p>Date to study on</p>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+           @* <td>
+                @Html.DisplayFor(modelItem => item.userName)
+            </td>*@
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.moduleCode)
+            </td>
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.moduleName)
+            </td>
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.numberOfCredits)
+            </td>
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.classHours)
+            </td>
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.semesterName)
+            </td>
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.semesterDuration)
+            </td>
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.semesterDate)
+            </td>
+                <td style="color:#073642">
+                    @Html.DisplayFor(modelItem => item.dateToStudy)
+                </td>
+            <td>
+                @*<a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |*@
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

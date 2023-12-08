@@ -1,0 +1,11 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = POE_PART_3_ST0084433
+build_property.ProjectDir = C:\Users\mattd\OneDrive\Desktop\POE-PART-3-ST0084433\POE-PART-3-ST0084433\

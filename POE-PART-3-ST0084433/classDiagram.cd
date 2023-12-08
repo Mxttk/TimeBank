@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="POE_PART_3_ST0084433.Models.ErrorViewModel" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ErrorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POE_PART_3_ST0084433.Models.SelfStudy" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAChAAAAAAAAQAAABAAAAAAAAAAAAEACAA=</HashCode>
+      <FileName>Models\SelfStudy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestMVC.Models.UserData" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAoAAAAAAAAQAAAAAAEAAQAQAAAAEAAAo=</HashCode>
+      <FileName>Models\UserData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POE_PART_3_ST0084433.Controllers.HomeController" Collapsed="true">
+    <Position X="2" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQABAAAAAAAAAAAAAQAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POE_PART_3_ST0084433.Controllers.SelfStudiesController" Collapsed="true">
+    <Position X="8" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABBACBAAAAAAABAAcAAEACAAEAAEAAAAA=</HashCode>
+      <FileName>Controllers\SelfStudiesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POE_PART_3_ST0084433.Controllers.UserDataController" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIBBACBAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\UserDataController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POE_PART_3_ST0084433.Areas.Identity.Pages.Account.LoginModel" Collapsed="true">
+    <Position X="2" Y="4" Width="2.25" />
+    <NestedTypes>
+      <Class Name="POE_PART_3_ST0084433.Areas.Identity.Pages.Account.LoginModel.InputModel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Areas\Identity\Pages\Account\Login.cshtml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAABAAAAAAAAAAgAABAAAAAMAAAAQAAAAIEAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\Pages\Account\Login.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POE_PART_3_ST0084433.Areas.Identity.Pages.Account.LogoutModel" Collapsed="true">
+    <Position X="5.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAABAABAAAAAIAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\Pages\Account\Logout.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POE_PART_3_ST0084433.Areas.Identity.Pages.Account.RegisterModel" Collapsed="true">
+    <Position X="2" Y="2.5" Width="2.25" />
+    <NestedTypes>
+      <Class Name="POE_PART_3_ST0084433.Areas.Identity.Pages.Account.RegisterModel.InputModel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Areas\Identity\Pages\Account\Register.cshtml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAgAABAAAAAMACAAQAAAAIEAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\Pages\Account\Register.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POE_PART_3_ST0084433.Program" Collapsed="true">
+    <Position X="7.75" Y="4" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POE_PART_3_ST0084433.Startup" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAACAAAAAA=</HashCode>
+      <FileName>Startup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POE_PART_3_ST0084433.Data.ApplicationDbContext" Collapsed="true">
+    <Position X="9.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAA=</HashCode>
+      <FileName>Data\ApplicationDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

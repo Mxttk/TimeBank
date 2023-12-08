@@ -1,0 +1,72 @@
+﻿@model IEnumerable<POE_PART_3_ST0084433.Models.SelfStudy>
+
+@{
+    <p></p>
+    ViewData["Title"] = "Index";
+    <p></p>
+}
+
+@* styling sheet reference for background image*@
+<link href="~/css/stylesheet4.css" rel="stylesheet" />
+
+<h1 style="color:#073642">Self Study</h1>
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+           @* <th>
+                @Html.DisplayNameFor(model => model.userName)
+            </th>*@
+            <th style="color:#073642">
+                <p>Module Code</p>
+            </th>
+            <th style="color:#073642">
+                <p>Total study hours</p>
+            </th>
+            <th style="color:#073642">
+                <p>Hours remaining</p>
+            </th>
+            <th style="color:#073642">
+                <p>Study date</p>
+            </th>
+            <th style ="color:#073642">
+                <p>Study duration</p>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+           @* <td>
+                @Html.DisplayFor(modelItem => item.userName)
+            </td>*@
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.moduleCode)
+            </td>
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.selfStudyHours)
+            </td>
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.studyHoursRemaining)
+            </td>
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.studyDate)
+            </td>
+                <td style="color:#073642">
+                @Html.DisplayFor(modelItem => item.studyDuration)
+            </td>
+            <td>
+               @* <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |*@
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+

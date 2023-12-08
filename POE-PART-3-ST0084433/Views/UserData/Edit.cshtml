@@ -1,0 +1,69 @@
+﻿@model TestMVC.Models.UserData
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>UserData</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="userName" class="control-label"></label>
+                <input asp-for="userName" class="form-control" />
+                <span asp-validation-for="userName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="moduleCode" class="control-label"></label>
+                <input asp-for="moduleCode" class="form-control" />
+                <span asp-validation-for="moduleCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="moduleName" class="control-label"></label>
+                <input asp-for="moduleName" class="form-control" />
+                <span asp-validation-for="moduleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="numberOfCredits" class="control-label"></label>
+                <input asp-for="numberOfCredits" class="form-control" />
+                <span asp-validation-for="numberOfCredits" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="classHours" class="control-label"></label>
+                <input asp-for="classHours" class="form-control" />
+                <span asp-validation-for="classHours" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="semesterName" class="control-label"></label>
+                <input asp-for="semesterName" class="form-control" />
+                <span asp-validation-for="semesterName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="semesterDuration" class="control-label"></label>
+                <input asp-for="semesterDuration" class="form-control" />
+                <span asp-validation-for="semesterDuration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="semesterDate" class="control-label"></label>
+                <input asp-for="semesterDate" class="form-control" />
+                <span asp-validation-for="semesterDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,6 @@
+C:\Users\mattd\source\repos\CalcRef\CalcRef\bin\Debug\CalcRef.dll
+C:\Users\mattd\source\repos\CalcRef\CalcRef\bin\Debug\CalcRef.pdb
+C:\Users\mattd\source\repos\CalcRef\CalcRef\obj\Debug\CalcRef.csproj.AssemblyReference.cache
+C:\Users\mattd\source\repos\CalcRef\CalcRef\obj\Debug\CalcRef.csproj.CoreCompileInputs.cache
+C:\Users\mattd\source\repos\CalcRef\CalcRef\obj\Debug\CalcRef.dll
+C:\Users\mattd\source\repos\CalcRef\CalcRef\obj\Debug\CalcRef.pdb
